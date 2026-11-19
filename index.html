@@ -4,124 +4,167 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vikas Sandireddy — Salesforce Marketing Cloud Developer</title>
-<meta name="description" content="Vikas Sandireddy — Salesforce Marketing Cloud Developer in San Jose, CA. 7+ years overall Salesforce/IT, 5+ years hands-on SFMC.">
+<meta name="description" content="Vikas Sandireddy — Salesforce Marketing Cloud Developer in San Jose, CA. 7+ years of overall Salesforce / IT experience, including 5+ years hands-on in Salesforce Marketing Cloud.">
 <style>
-  :root{--ink:#17202a;--muted:#5d6d7e;--accent:#0176d3;--accent-dark:#014486;--bg:#ffffff;--panel:#f4f6f9;--border:#d8dee6;--radius:12px}
-  *{box-sizing:border-box}
-  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
-  a{color:var(--accent);text-decoration:none}
-  a:hover{text-decoration:underline}
-  .wrap{max-width:880px;margin:0 auto;padding:0 20px 64px}
-  header{padding:56px 0 32px;border-bottom:3px solid var(--accent)}
-  h1{font-size:2.4rem;line-height:1.15;margin:0 0 8px;letter-spacing:-.02em}
-  .role{font-size:1.2rem;color:var(--accent-dark);font-weight:600;margin:0 0 6px}
-  .loc{color:var(--muted);margin:0 0 18px}
-  .summary{font-size:1.05rem;max-width:720px;margin:0 0 22px}
-  .links{display:flex;flex-wrap:wrap;gap:10px}
-  .links a{display:inline-block;padding:8px 14px;border:1px solid var(--border);border-radius:999px;background:var(--panel);font-size:.95rem;font-weight:600}
-  section{padding:36px 0 4px}
-  h2{font-size:1.35rem;margin:0 0 18px;padding-bottom:8px;border-bottom:1px solid var(--border)}
-  .card{border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-bottom:20px;background:#fff}
-  .card h3{margin:0 0 6px;font-size:1.15rem;line-height:1.35}
-  .tag{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--accent-dark);background:#eaf3fc;border-radius:999px;padding:3px 10px;margin-bottom:10px}
-  .card p{margin:0 0 12px;color:#2c3e50}
-  .card ul{margin:0 0 14px;padding-left:20px;color:#2c3e50}
-  .repo{font-weight:600}
-  .exp{margin-bottom:18px}
-  .exp h3{margin:0;font-size:1.05rem}
-  .exp .meta{color:var(--muted);font-size:.95rem;margin:2px 0 4px}
-  .exp p{margin:0;color:#2c3e50}
-  .skills{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:20px 24px}
-  .skills p{margin:0 0 10px}
-  .skills p:last-child{margin-bottom:0}
-  .skills strong{color:var(--accent-dark)}
-  footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--border);color:var(--muted);font-size:.92rem}
-  @media (max-width:600px){h1{font-size:1.9rem}header{padding-top:36px}.card{padding:18px}}
+:root{--bg:#050505;--bg2:#0b0b0d;--panel:#111114;--panel2:#16161a;--ink:#f5f5f4;--muted:#a3a3ad;--muted2:#d4d4d8;--accent:#e8292f;--accent2:#ff3b41;--line:#232328;--radius:20px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;background:radial-gradient(720px 420px at 18% 8%,rgba(232,41,47,.16),transparent 65%),radial-gradient(640px 420px at 88% 42%,rgba(232,41,47,.10),transparent 65%),radial-gradient(500px 500px at 50% 100%,rgba(232,41,47,.07),transparent 65%)}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px;position:relative;z-index:1}
+/* Nav */
+.nav{position:sticky;top:16px;z-index:50;margin-top:16px}
+.nav-inner{max-width:1120px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 12px 10px 22px;background:rgba(14,14,17,.88);border:1px solid var(--line);border-radius:999px;backdrop-filter:blur(12px)}
+.logo{font-weight:900;font-size:1.25rem;letter-spacing:-.03em;text-decoration:none;white-space:nowrap}
+.logo span{color:var(--accent2)}
+.nav-links{display:flex;gap:26px;align-items:center}
+.nav-links a{color:var(--muted2);text-decoration:none;font-size:.82rem;font-weight:700;letter-spacing:.12em}
+.nav-links a:hover{color:#fff}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:800;font-size:.85rem;letter-spacing:.06em;padding:12px 22px;border-radius:999px;border:1px solid var(--accent);transition:transform .2s,background .2s,box-shadow .2s}
+.btn:hover{background:var(--accent2);transform:translateY(-2px);box-shadow:0 10px 30px rgba(232,41,47,.35)}
+.btn.small{padding:9px 18px}
+.btn.ghost{background:transparent;border-color:#33333a;color:var(--ink)}
+.btn.ghost:hover{border-color:var(--accent2);color:#fff;box-shadow:none}
+/* Hero */
+.hero{padding:96px 0 72px}
+.badge{display:inline-flex;align-items:center;gap:9px;border:1px solid #2e2e35;background:rgba(255,255,255,.04);padding:9px 16px;border-radius:999px;font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.badge i{width:9px;height:9px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.18);display:inline-block}
+.eyebrow{color:var(--accent2);font-weight:800;letter-spacing:.22em;font-size:.82rem;text-transform:uppercase;margin:34px 0 10px}
+h1{font-size:clamp(3.2rem,9.5vw,7.2rem);line-height:.92;letter-spacing:-.045em;margin:0 0 8px;font-weight:900;text-transform:uppercase}
+h1 .thin{display:block;color:transparent;-webkit-text-stroke:2px #f5f5f4}
+h1 em{font-style:normal;color:var(--accent2)}
+.hero-role{font-size:clamp(1.25rem,2.6vw,1.8rem);font-weight:800;letter-spacing:-.02em;margin:18px 0 6px}
+.hero-role span{color:var(--accent2)}
+.hero-loc{color:var(--muted);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:.9rem}
+.hero p.lede{font-size:1.15rem;color:var(--muted2);max-width:760px;margin:22px 0 30px}
+.hero p.lede strong{color:#fff}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-stats{display:grid;grid-template-columns:repeat(2,minmax(0,300px));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:56px}
+.stat{background:var(--panel);padding:28px 30px}
+.stat b{display:block;font-size:clamp(2.4rem,5vw,3.4rem);line-height:1;letter-spacing:-.04em;font-weight:900}
+.stat b span{color:var(--accent2)}
+.stat span{display:block;margin-top:12px;color:var(--muted);font-size:.82rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.stat span::before{content:"";display:block;width:34px;height:3px;background:var(--accent);margin-bottom:12px}
+/* Sections */
+section{padding:88px 0}
+.sec-head{text-align:center;margin-bottom:52px}
+.sec-head .kicker{color:var(--accent2);font-weight:800;letter-spacing:.28em;font-size:.82rem;text-transform:uppercase}
+h2{font-size:clamp(3rem,8vw,5.6rem);line-height:.95;letter-spacing:-.04em;margin:12px 0 0;font-weight:900;text-transform:uppercase}
+h2::after{content:"";display:block;width:72px;height:5px;background:var(--accent);margin:22px auto 0;border-radius:99px}
+.sec-sub{color:var(--muted);max-width:640px;margin:18px auto 0;font-size:1.05rem}
+/* Projects */
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:var(--radius);padding:34px 32px;display:flex;flex-direction:column;transition:transform .25s,border-color .25s,box-shadow .25s}
+.card:hover{transform:translateY(-6px);border-color:rgba(232,41,47,.55);box-shadow:0 24px 50px rgba(0,0,0,.45)}
+.card-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px}
+.num{font-size:2rem;font-weight:900;letter-spacing:-.03em;color:#2c2c33}
+.tag{font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent2);border:1px solid rgba(232,41,47,.45);background:rgba(232,41,47,.10);padding:7px 12px;border-radius:999px;white-space:nowrap}
+.card h3{font-size:1.45rem;line-height:1.25;letter-spacing:-.02em;margin:0 0 10px}
+.card h3 span{color:var(--muted);font-weight:600}
+.card>p{color:var(--muted2);margin:0 0 18px}
+.card ul{margin:0 0 22px;padding-left:20px;color:#e4e4e7}
+.card li{margin-bottom:8px}
+.card li::marker{color:var(--accent2)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}
+.chip{font-size:.78rem;font-weight:700;color:var(--muted2);border:1px solid #2c2c33;background:#0d0d10;padding:6px 11px;border-radius:999px}
+.card .btn{margin-top:auto;align-self:flex-start}
+/* Experience */
+.timeline{max-width:820px;margin:0 auto;position:relative;padding-left:34px}
+.timeline::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--accent),#333)}
+.job{position:relative;padding:0 0 44px}
+.job:last-child{padding-bottom:0}
+.job::before{content:"";position:absolute;left:-34px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px rgba(232,41,47,.18)}
+.job h3{font-size:1.45rem;letter-spacing:-.02em;margin:0;line-height:1.3}
+.job .meta{color:var(--accent2);font-weight:800;font-size:.88rem;letter-spacing:.08em;text-transform:uppercase;margin:8px 0 8px}
+.job p{color:var(--muted2);margin:0;max-width:640px}
+.job .now{display:inline-block;background:var(--accent);color:#fff;font-size:.7rem;font-weight:800;letter-spacing:.12em;padding:4px 9px;border-radius:999px;vertical-align:middle;margin-left:8px;text-transform:uppercase}
+/* Skills */
+.skill-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px}
+.skill-box{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:32px}
+.skill-box h3{margin:0 0 6px;font-size:1.35rem;letter-spacing:-.02em}
+.skill-box>p{color:var(--muted);margin:0 0 22px}
+.skill-row{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:13px 0;border-top:1px solid #1f1f24}
+.skill-row:first-of-type{border-top:0}
+.skill-row strong{font-size:1rem}
+.skill-row small{display:block;color:var(--muted);font-weight:500}
+.level{font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:6px 11px;border-radius:999px;white-space:nowrap}
+.level.expert{background:var(--accent);color:#fff}
+.level.advanced{background:rgba(232,41,47,.14);color:#ff6b6f;border:1px solid rgba(232,41,47,.45)}
+.level.proficient{background:#1d1d22;color:#d4d4d8;border:1px solid #33333a}
+.stack{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);padding:28px 30px}
+.stack h3{margin:0 0 16px;font-size:.82rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+/* Contact */
+.contact{text-align:center}
+.contact-box{background:linear-gradient(180deg,#17171b,#0d0d10);border:1px solid var(--line);border-radius:28px;padding:clamp(40px,7vw,72px) clamp(24px,6vw,64px)}
+.contact-box h2{margin-top:0}
+.contact-box p{color:var(--muted2);max-width:600px;margin:20px auto 30px;font-size:1.1rem}
+.contact-links{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px;text-align:left}
+.contact-links a{display:block;background:#0a0a0c;border:1px solid var(--line);border-radius:16px;padding:22px;text-decoration:none;transition:border-color .2s,transform .2s}
+.contact-links a:hover{border-color:var(--accent2);transform:translateY(-3px)}
+.contact-links small{display:block;color:var(--muted);font-size:.75rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px}
+.contact-links strong{font-size:1.02rem;word-break:break-word}
+.contact-links span{display:block;color:var(--accent2);font-weight:800;font-size:.85rem;margin-top:10px}
+footer{border-top:1px solid var(--line);padding:34px 0 44px;color:var(--muted);font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center}
+footer a{color:var(--muted2)}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(max-width:820px){.projects,.skill-grid{grid-template-columns:1fr}.contact-links{grid-template-columns:1fr}.nav-links{display:none}.hero{padding-top:64px}section{padding:64px 0}.card{padding:26px 22px}.skill-box{padding:26px 22px}}
+@media(max-width:520px){.hero-stats{grid-template-columns:1fr}.nav-inner{padding:8px 10px 8px 18px}}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <h1>Vikas Sandireddy</h1>
-    <p class="role">Salesforce Marketing Cloud Developer</p>
-    <p class="loc">San Jose, CA</p>
-    <p class="summary">7+ years of overall Salesforce / IT experience, including 5+ years hands-on in Salesforce Marketing Cloud. Currently an SFMC Developer at Citigroup; previously at UnitedHealth Group, American Express, and Wipro.</p>
-    <nav class="links" aria-label="Contact links">
-      <a href="https://www.linkedin.com/in/vikas-sandireddy-765124353">LinkedIn</a>
-      <a href="https://github.com/sandireddyvikas17-dev">GitHub</a>
-      <a href="mailto:sandireddyvikas17@gmail.com">sandireddyvikas17@gmail.com</a>
-    </nav>
-  </header>
+<header class="nav"><div class="nav-inner"><a class="logo" href="#top">V<span>S</span>.</a><nav class="nav-links" aria-label="Sections"><a href="#projects">PROJECTS</a><a href="#experience">EXPERIENCE</a><a href="#skills">SKILLS</a><a href="#contact">CONTACT</a></nav><a class="btn small" href="mailto:sandireddyvikas17@gmail.com">LET'S TALK</a></div></header>
+<main id="top" class="wrap">
+<section class="hero">
+<span class="badge"><i></i>Open to new opportunities</span>
+<p class="eyebrow">Salesforce Marketing Cloud Developer &middot; San Jose, CA</p>
+<h1>Vikas<span class="thin">Sandireddy</span><em>.</em></h1>
+<p class="hero-role">Salesforce Marketing Cloud Developer <span>/</span> SFMC Builder</p>
+<p class="hero-loc">San Jose, California</p>
+<p class="lede">I build customer journeys that actually work &mdash; <strong>7+ years of overall Salesforce / IT experience, including 5+ years hands-on in Salesforce Marketing Cloud</strong>, turning data, automation and personalization into campaigns people want to open.</p>
+<div class="hero-actions"><a class="btn" href="#projects">EXPLORE MY WORK</a><a class="btn ghost" href="https://www.linkedin.com/in/vikas-sandireddy-765124353">LinkedIn</a><a class="btn ghost" href="https://github.com/sandireddyvikas17-dev">GitHub</a><a class="btn ghost" href="mailto:sandireddyvikas17@gmail.com">Email</a></div>
+<div class="hero-stats"><div class="stat"><b>7<span>+</span></b><span>Years overall Salesforce / IT</span></div><div class="stat"><b>5<span>+</span></b><span>Years hands-on in SFMC</span></div></div>
+</section>
 
-  <section aria-labelledby="projects">
-    <h2 id="projects">Projects</h2>
-
-    <article class="card">
-      <span class="tag">Personal project</span>
-      <h3>SFMC Campaign Portfolio — Trail Rewards (Northwind Outfitters)</h3>
-      <p>An end-to-end Salesforce Marketing Cloud campaign built for a fictional brand, documented as real code and designs.</p>
-      <ul>
-        <li>7 Data Extensions forming the campaign data model</li>
-        <li>Automation Studio SQL segmentation</li>
-        <li>AMPscript dynamic content and personalization</li>
-        <li>CloudPages preference center</li>
-        <li>Journey Builder journey design</li>
-      </ul>
-      <p class="repo"><a href="https://github.com/sandireddyvikas17-dev/sfmc-campaign-portfolio">github.com/sandireddyvikas17-dev/sfmc-campaign-portfolio</a></p>
-    </article>
-
-    <article class="card">
-      <span class="tag">Personal project</span>
-      <h3>Data 360 Unified Profile &amp; Activation Lab — VitalRoute Wellness</h3>
-      <p>A Salesforce Data Cloud (Data 360) portfolio build for a fictional brand, covering unified profiles through to activation.</p>
-      <ul>
-        <li>DLO / DMO mapping</li>
-        <li>Calculated Insight SQL</li>
-        <li>Segmentation</li>
-        <li>Activation to Marketing Cloud</li>
-      </ul>
-      <p class="repo"><a href="https://github.com/sandireddyvikas17-dev/data360-activation-lab">github.com/sandireddyvikas17-dev/data360-activation-lab</a></p>
-    </article>
-  </section>
-
-  <section aria-labelledby="experience">
-    <h2 id="experience">Experience</h2>
-    <div class="exp">
-      <h3>Citigroup — SFMC Developer</h3>
-      <p class="meta">Jul 2025 – Present · San Jose, CA</p>
-      <p>Enterprise customer journey automation in Salesforce Marketing Cloud.</p>
-    </div>
-    <div class="exp">
-      <h3>UnitedHealth Group — SFMC Platform Developer</h3>
-      <p class="meta">2023 – 2025</p>
-      <p>SFMC platform development, journeys, automation, and campaign delivery.</p>
-    </div>
-    <div class="exp">
-      <h3>American Express — SFMC Email Specialist</h3>
-      <p class="meta">2020 – 2022</p>
-      <p>SFMC email campaigns and deployment.</p>
-    </div>
-    <div class="exp">
-      <h3>Wipro — SFMC Email Deployment Specialist</h3>
-      <p class="meta">2019 – 2020</p>
-      <p>SFMC email deployment and campaign operations.</p>
-    </div>
-  </section>
-
-  <section aria-labelledby="skills">
-    <h2 id="skills">Skills</h2>
-    <div class="skills">
-      <p><strong>Salesforce Marketing Cloud:</strong> Journey Builder, Automation Studio, AMPscript, SSJS, SQL, CloudPages, Email Studio, Marketing Cloud Connect, REST / SOAP APIs</p>
-      <p><strong>Salesforce Data Cloud:</strong> Data 360</p>
-      <p><strong>Marketing Cloud Intelligence</strong></p>
-      <p><strong>Salesforce CRM:</strong> Apex, LWC, Flows — integration level</p>
-    </div>
-  </section>
-
-  <footer>
-    <p>Vikas Sandireddy · San Jose, CA · <a href="mailto:sandireddyvikas17@gmail.com">sandireddyvikas17@gmail.com</a> · <a href="https://www.linkedin.com/in/vikas-sandireddy-765124353">LinkedIn</a> · <a href="https://github.com/sandireddyvikas17-dev">GitHub</a></p>
-    <p>Portfolio projects above are personal projects built with fictional brands. They are not employer work.</p>
-  </footer>
+<section id="projects" class="reveal">
+<div class="sec-head"><p class="kicker">Featured Work</p><h2>Projects.</h2><p class="sec-sub">Two hands-on builds that show how I work in Marketing Cloud and Data Cloud &mdash; end to end, documented as real code.</p></div>
+<div class="projects">
+<article class="card"><div class="card-top"><span class="num">01</span><span class="tag">Personal Project</span></div><h3>SFMC Campaign Portfolio &mdash; Trail Rewards <span>(Northwind Outfitters)</span></h3><p>An end-to-end Salesforce Marketing Cloud campaign built for a fictional brand, documented as real code and designs.</p><ul><li>7 Data Extensions forming the campaign data model</li><li>Automation Studio SQL segmentation</li><li>AMPscript dynamic content and personalization</li><li>CloudPages preference center and Journey Builder journey design</li></ul><div class="chips"><span class="chip">Journey Builder</span><span class="chip">Automation Studio</span><span class="chip">AMPscript</span><span class="chip">SQL</span><span class="chip">CloudPages</span></div><a class="btn" href="https://github.com/sandireddyvikas17-dev/sfmc-campaign-portfolio">View code on GitHub &rarr;</a></article>
+<article class="card"><div class="card-top"><span class="num">02</span><span class="tag">Personal Project</span></div><h3>Data 360 Unified Profile &amp; Activation Lab &mdash; VitalRoute Wellness</h3><p>A Salesforce Data Cloud (Data 360) portfolio build for a fictional brand, covering unified profiles through to activation.</p><ul><li>DLO / DMO mapping for a unified customer profile</li><li>Calculated Insight SQL</li><li>Segmentation in Data Cloud</li><li>Activation to Marketing Cloud</li></ul><div class="chips"><span class="chip">Data Cloud</span><span class="chip">Data 360</span><span class="chip">Calculated Insights</span><span class="chip">Segmentation</span><span class="chip">Activation</span></div><a class="btn" href="https://github.com/sandireddyvikas17-dev/data360-activation-lab">View code on GitHub &rarr;</a></article>
 </div>
+</section>
+
+<section id="experience" class="reveal">
+<div class="sec-head"><p class="kicker">Where I've Worked</p><h2>Experience.</h2></div>
+<div class="timeline">
+<div class="job"><h3>Citigroup &mdash; SFMC Developer<span class="now">Current</span></h3><p class="meta">Jul 2025 &ndash; Present &middot; San Jose, CA</p><p>Enterprise customer journey automation in Salesforce Marketing Cloud.</p></div>
+<div class="job"><h3>UnitedHealth Group &mdash; SFMC Platform Developer</h3><p class="meta">2023 &ndash; 2025</p><p>SFMC platform development, journeys, automation, and campaign delivery.</p></div>
+<div class="job"><h3>American Express &mdash; SFMC Email Specialist</h3><p class="meta">2020 &ndash; 2022</p><p>SFMC email campaigns and deployment.</p></div>
+<div class="job"><h3>Wipro &mdash; SFMC Email Deployment Specialist</h3><p class="meta">2019 &ndash; 2020</p><p>SFMC email deployment and campaign operations.</p></div>
+</div>
+</section>
+
+<section id="skills" class="reveal">
+<div class="sec-head"><p class="kicker">What I Work With</p><h2>Skills.</h2><p class="sec-sub">Deep in the Marketing Cloud stack, with Data Cloud and Salesforce CRM at integration level.</p></div>
+<div class="skill-grid">
+<div class="skill-box"><h3>Salesforce Marketing Cloud</h3><p>Core platform &mdash; my day-to-day work.</p><div class="skill-row"><strong>Journey Builder</strong><span class="level expert">Expert</span></div><div class="skill-row"><strong>Automation Studio</strong><span class="level expert">Expert</span></div><div class="skill-row"><strong>AMPscript</strong><span class="level expert">Expert</span></div><div class="skill-row"><strong>Email Studio</strong><span class="level expert">Expert</span></div><div class="skill-row"><strong>SQL</strong><span class="level advanced">Advanced</span></div><div class="skill-row"><strong>SSJS</strong><span class="level advanced">Advanced</span></div><div class="skill-row"><strong>CloudPages</strong><span class="level advanced">Advanced</span></div><div class="skill-row"><strong>Marketing Cloud Connect</strong><span class="level advanced">Advanced</span></div><div class="skill-row"><strong>REST / SOAP APIs</strong><span class="level advanced">Advanced</span></div></div>
+<div class="skill-box"><h3>Data Cloud &amp; Salesforce CRM</h3><p>Unified data and CRM integration.</p><div class="skill-row"><strong>Salesforce Data Cloud (Data 360)</strong><span class="level proficient">Proficient</span></div><div class="skill-row"><strong>Marketing Cloud Intelligence</strong><span class="level proficient">Proficient</span></div><div class="skill-row"><strong>Salesforce CRM</strong><small>Apex, LWC, Flows &mdash; integration level</small><span class="level proficient">Proficient</span></div></div>
+</div>
+<div class="stack"><h3>Tech Stack</h3><div class="chips"><span class="chip">SFMC</span><span class="chip">Journey Builder</span><span class="chip">Automation Studio</span><span class="chip">AMPscript</span><span class="chip">SSJS</span><span class="chip">SQL</span><span class="chip">CloudPages</span><span class="chip">Email Studio</span><span class="chip">Marketing Cloud Connect</span><span class="chip">REST API</span><span class="chip">SOAP API</span><span class="chip">Data Cloud (Data 360)</span><span class="chip">Marketing Cloud Intelligence</span><span class="chip">Apex</span><span class="chip">LWC</span><span class="chip">Flows</span></div></div>
+</section>
+
+<section id="contact" class="contact reveal">
+<div class="contact-box"><p class="kicker">Get In Touch</p><h2>Contact.</h2><p>Looking for an SFMC developer who can own journeys, automation and personalization end to end? I'd love to talk about your next role.</p><a class="btn" href="mailto:sandireddyvikas17@gmail.com">Email Me &rarr;</a>
+<div class="contact-links"><a href="https://www.linkedin.com/in/vikas-sandireddy-765124353"><small>LinkedIn</small><strong>linkedin.com/in/vikas-sandireddy-765124353</strong><span>Connect &rarr;</span></a><a href="https://github.com/sandireddyvikas17-dev"><small>GitHub</small><strong>github.com/sandireddyvikas17-dev</strong><span>View code &rarr;</span></a><a href="mailto:sandireddyvikas17@gmail.com"><small>Email</small><strong>sandireddyvikas17@gmail.com</strong><span>Say hello &rarr;</span></a></div></div>
+</section>
+</main>
+<footer><div class="wrap"><span>&copy; 2026 Vikas Sandireddy &middot; San Jose, CA</span><span>Portfolio projects above are personal projects built with fictional brands. They are not employer work.</span></div></footer>
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+</script>
 </body>
 </html>
